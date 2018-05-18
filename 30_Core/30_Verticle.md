@@ -30,11 +30,12 @@ Verticle 是由 Vert.x 部署和运行的代码块。默认情况一个 Vert.x �
 
 # 3 编写 Verticle
 
-Verticle 的实现类必须实现 Verticle 接口。
+规则
 
-如果您喜欢的话，可以直接实现该接口，但是通常直接从抽象类 AbstractVerticle 继承更简单。
+    Verticle 的实现类必须实现 Verticle 接口。
+    从抽象类 AbstractVerticle 继承更简单。
 
-这儿有一个例子：
+例子
 
     public class MyVerticle extends AbstractVerticle {
     
@@ -49,11 +50,12 @@ Verticle 的实现类必须实现 Verticle 接口。
       }
     
     }
-通常您需要像上边例子一样重写 start 方法。
+    
+方法
+    
+    当 Vert.x 部署 Verticle 时，它的 start 方法将被调用，这个方法执行完成后 Verticle 就变成已启动状态。
 
-当 Vert.x 部署 Verticle 时，它的 start 方法将被调用，这个方法执行完成后 Verticle 就变成已启动状态。
 
-您同样可以重写 stop 方法，当Vert.x 撤销一个 Verticle 时它会被调用，这个方法执行完成后 Verticle 就变成已停止状态了。
 
 # Verticle 异步启动和停止
 
@@ -126,24 +128,16 @@ public class MyVerticle extends AbstractVerticle {
       
 # 7 部署
 
-编程方式部署Verticle
-您可以指定一个 Verticle 名称或传入您已经创建好的 Verticle 实例，使用任意一个 deployVerticle 方法来部署Verticle。
+## 编程方式部署Verticle
 
-请注意：通过 Verticle 实例 来部署 Verticle 仅限Java语言。
+方法
 
-Verticle myVerticle = new MyVerticle();
-vertx.deployVerticle(myVerticle);\
+    vertx.deployVerticle()
 
-您同样可以指定 Verticle 的 名称 来部署它。
+调试
 
-这个 Verticle 的名称会用于查找实例化 Verticle 的特定 VerticleFactory。
-
-不同的 Verticle Factory 可用于实例化不同语言的 Verticle，也可用于其他目的，例如加载服务、运行时从Maven中获取Verticle实例等。
-
-这允许您部署用任何使用Vert.x支持的语言编写的Verticle实例。
-
-
-vertx.deployVerticle("com.mycompany.MyOrderProcessorVerticle");
+    main方法    
+    
 
 
 ## Verticle名称到Factory的映射规则
@@ -283,7 +277,10 @@ vertx.deployVerticle("com.mycompany.MyOrderProcessorVerticle");
    
    欲了解有关在命令行执行 vertx 可用的各种选项完整信息，可以直接在命令行键入 vertx 查看帮助。
    
-   
+
+# 8 执行
+
+https://vertxchina.github.io/vertx-translation-chinese/start/SimpleStart.html   
    
    
 # 8 Context 对象
