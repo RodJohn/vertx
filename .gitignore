@@ -23,3 +23,9 @@
 40_Web/Demo/30_webproxy/.vertx/
 40_Web/Demo/30_webproxy/build/
 40_Web/Demo/30_webproxy/out/
+/40_Web/Demo/20_webclient/.gradle/
+!/40_Web/Demo/30_webproxy/.gradle/
+/40_Web/Demo/30_webproxy/.gradle/
+/30_Core/first/.gradle/
+/30_Core/first/.idea/
+/30_Core/first/build/
