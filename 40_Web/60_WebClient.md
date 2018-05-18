@@ -105,7 +105,7 @@ request.putHeader("content-type", "application/json");
 request.putHeader("other-header", "foo");
   
   
-# 响应处理
+# HTTP
 
 
 Web Client请求发送之后，返回的结果将会被包装在异步结果 HttpResponse 中。

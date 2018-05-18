@@ -1,2 +1,25 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea/
+/40_Web/Demo/10_web/.vertx/
+/40_Web/Demo/10_web/.idea/
+/40_Web/Demo/10_web/out/
+/40_Web/Demo/10_web/build/
+/40_Web/Demo/20_webclient/out/
+/40_Web/Demo/20_webclient/.idea/
+/40_Web/Demo/20_webclient/build/
+/40_Web/Demo/20_webclient/.vertx/
+/40_Web/Demo/30_webproxy/.idea/
+/40_Web/Demo/30_webproxy/.vertx/
+/40_Web/Demo/30_webproxy/out/
+/40_Web/Demo/30_webproxy/build/
+40_Web/Demo/10_web/.gradle/
+40_Web/Demo/20_webclient/.idea/inspectionProfiles/
+40_Web/Demo/20_webclient/.idea/modules/20_webclient.iml
+40_Web/Demo/20_webclient/.idea/modules/20_webclient_main.iml
+40_Web/Demo/20_webclient/.idea/modules/20_webclient_test.iml
+40_Web/Demo/20_webclient/.vertx/
+40_Web/Demo/20_webclient/build/tmp/compileJava/
+40_Web/Demo/30_webproxy/.idea/inspectionProfiles/
+40_Web/Demo/30_webproxy/.vertx/
+40_Web/Demo/30_webproxy/build/
+40_Web/Demo/30_webproxy/out/
