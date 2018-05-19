@@ -29,3 +29,7 @@
 40_Web/Demo/20_webclient/src/test/
 40_Web/Demo/30_webproxy/src/main/resources/
 40_Web/Demo/30_webproxy/src/test/
+/40_Web/Demo/10_simple/.vertx/
+/40_Web/Demo/10_simple/out/
+/40_Web/Demo/10_simple/.idea/
+/40_Web/Demo/10_simple/.gradle/

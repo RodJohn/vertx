@@ -9,3 +9,4 @@
 
 # 本地共享Map
 
+它是Vert.X提供的一个简单共享Map和Set，用来解决各个Verticle之间的数据共享

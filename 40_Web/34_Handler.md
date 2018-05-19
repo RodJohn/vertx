@@ -1,5 +1,24 @@
 
 
+# 阻塞
+
+## 使用阻塞式处理器  
+
+    阻塞式处理器会使用 Worker Pool 中的线程而不是 Event Loop 线程来处理请求。
+  
+  
+    router.route().blockingHandler(routingContext -> {
+    
+    // 执行某些同步的耗时操作
+    service.doSomethingThatBlocks();
+    
+    // 调用下一个处理器
+    routingContext.next();
+    
+    });  
+
+
+
 
 # 上下文数据
 
@@ -19,12 +38,29 @@
     获取请求的消息体
     如果您知道消息体的类型是 JSON，您可以使用 getBodyAsJson；如果您知道它的类型是字符串，您可以使用 getBodyAsString；否则可以通过 getBody 作为 Buffer 来处理。
 
-表单处理
+    表单处理
+    
+    上传文件
 
-上传文件
+
+# 
+    
+    超时处理器
+    
+    Content Type 处理器
 
     
 
 # 会话
 
-# 使用阻塞式处理器  
+    cookie
+    
+    session
+
+# 权限    
+    
+
+
+
+
+# 模板引擎

@@ -2,25 +2,30 @@
 
 # 概述 
 
-Vert.x的执行单元叫verticle。即程序的入口
 
-verticle分两种，一种是基于EventLoop的适合I/O密集型的，还有一种是适合CPU密集型的worker verticle。而verticle之间相互通信只能通过Eventbus，可以支持point to point 的通信，也可以支持publish & subscribe通信方式。
+    基于Vert.x框架实现的代码包,就是一个Verticle,简单点说,一个可以被Vert.x框架执行的代码调用了Vert.xAPI的代码就是一个Verticle
 
 
-Vert.x 通过开箱即用的方式提供了一个简单便捷的、可扩展的、类似 Actor Model 的部署和并发模型机制。
-您可以用此模型机制来保管您自己的代码组件。
 
-这个模型是可选的，如果您不想这样做，Vert.x 不会强迫您用这种方式创建您的应用程序。
-
-这个模型不能说是严格的 Actor 模式的实现，但它确实有相似之处，特别是在并发、扩展性和部署等方面。
-
-要使用该模型，您需要将您的代码组织成一系列的 Verticle。
-
-Verticle 是由 Vert.x 部署和运行的代码块。默认情况一个 Vert.x 实例维护了N（默认情况下N = CPU核数 x 2）个 Event Loop 线程。Verticle 实例可使用任意 Vert.x 支持的编程语言编写，而且一个简单的应用程序也可以包含多种语言编写的 Verticle。
-
-您可以将 Verticle 想成 Actor Model 中的 Actor。
-
-一个应用程序通常是由在同一个 Vert.x 实例中同时运行的许多 Verticle 实例组合而成。不同的 Verticle 实例通过向 Event Bus 上发送消息来相互通信。
+    Vert.x的执行单元叫verticle。即程序的入口
+    
+    verticle分两种，一种是基于EventLoop的适合I/O密集型的，还有一种是适合CPU密集型的worker verticle。而verticle之间相互通信只能通过Eventbus，可以支持point to point 的通信，也可以支持publish & subscribe通信方式。
+    
+    
+    Vert.x 通过开箱即用的方式提供了一个简单便捷的、可扩展的、类似 Actor Model 的部署和并发模型机制。
+    您可以用此模型机制来保管您自己的代码组件。
+    
+    这个模型是可选的，如果您不想这样做，Vert.x 不会强迫您用这种方式创建您的应用程序。
+    
+    这个模型不能说是严格的 Actor 模式的实现，但它确实有相似之处，特别是在并发、扩展性和部署等方面。
+    
+    要使用该模型，您需要将您的代码组织成一系列的 Verticle。
+    
+    Verticle 是由 Vert.x 部署和运行的代码块。默认情况一个 Vert.x 实例维护了N（默认情况下N = CPU核数 x 2）个 Event Loop 线程。Verticle 实例可使用任意 Vert.x 支持的编程语言编写，而且一个简单的应用程序也可以包含多种语言编写的 Verticle。
+    
+    您可以将 Verticle 想成 Actor Model 中的 Actor。
+    
+    一个应用程序通常是由在同一个 Vert.x 实例中同时运行的许多 Verticle 实例组合而成。不同的 Verticle 实例通过向 Event Bus 上发送消息来相互通信。
 
 
 # Actor
