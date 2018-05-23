@@ -19,7 +19,8 @@
 
     response().end()
         结束响应
-    
+        调用end方法时，对应的HTTP Response才能被发送回客户端
+        
     routingContext.next();
         请求向下传递
 
@@ -102,6 +103,10 @@
     访问路径
     /productsAPI/products/product1234
 
+
+## 快速写法
+
+    router.post(Constants.API_CREATE).handler(this::handleCreateTodo);
 
 # 5 特殊
 

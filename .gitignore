@@ -39,3 +39,7 @@
 /50_DataBase/Demo/10_simple/out/
 /50_DataBase/Demo/10_simple/.vertx/
 /50_DataBase/Demo/10_simple/.gradle/
+/50_DataBase/Demo/60_redis/out/
+/50_DataBase/Demo/60_redis/.idea/
+/50_DataBase/Demo/60_redis/.gradle/
+/50_DataBase/Demo/60_redis/.vertx/
