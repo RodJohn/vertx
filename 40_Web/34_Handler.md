@@ -58,6 +58,7 @@
 
 # CorsHandler
     
+# StaticHandler    
 
 # 会话
 

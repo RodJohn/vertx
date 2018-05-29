@@ -3,11 +3,11 @@
 # 概述 
 
 
+    在Vert.x里，一个verticle就是一个组件。通过继承AbstractVerticle，我们的类就能够获取vertx对象并使用了
+
     基于Vert.x框架实现的代码包,就是一个Verticle,简单点说,一个可以被Vert.x框架执行的代码调用了Vert.xAPI的代码就是一个Verticle
 
 
-
-    Vert.x的执行单元叫verticle。即程序的入口
     
     verticle分两种，一种是基于EventLoop的适合I/O密集型的，还有一种是适合CPU密集型的worker verticle。而verticle之间相互通信只能通过Eventbus，可以支持point to point 的通信，也可以支持publish & subscribe通信方式。
     
@@ -32,6 +32,9 @@
 
 基于Actor的消息传递
 Actor 模型
+
+
+
 
 # 3 编写 Verticle
 
